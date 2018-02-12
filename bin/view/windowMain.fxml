@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="434.0" prefWidth="400.0" styleClass="content-background" stylesheets="@../resources/desing.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.windowMainController">
+	<children>
+		<BorderPane prefHeight="416.0" prefWidth="400.0" styleClass="content-background">
+			<top>
+				<HBox prefHeight="51.0" prefWidth="240.0" style="-fx-background-color: #8CE1B2; -fx-border-color: #000;" BorderPane.alignment="CENTER">
+					<children>
+						<ImageView fitHeight="55.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
+							<image>
+								<Image url="@../images/abc-alphabet-cube-icon-69613.png" />
+							</image>
+						</ImageView>
+						<Label alignment="CENTER" prefHeight="54.0" prefWidth="344.0" styleClass="label-header" text="Letter Clasificator" textAlignment="CENTER">
+							<font>
+								<Font name="Script MT Bold" size="18.0" />
+							</font>
+						</Label>
+					</children>
+				</HBox>
+			</top>
+			<left>
+				<Pane prefHeight="323.0" prefWidth="26.0" BorderPane.alignment="CENTER" />
+			</left>
+			<right>
+				<Pane prefHeight="188.0" prefWidth="25.0" BorderPane.alignment="CENTER" />
+			</right>
+			<center>
+				<AnchorPane prefHeight="124.0" prefWidth="250.0" BorderPane.alignment="CENTER">
+					<children>
+						<TextField fx:id="wordToClasificate" layoutX="33.0" layoutY="38.0" prefHeight="25.0" prefWidth="189.0" AnchorPane.bottomAnchor="62.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="38.0" />
+						<Label alignment="CENTER" layoutX="1.0" layoutY="-3.0" prefHeight="32.0" prefWidth="252.0" text="Escriba La palabra Seleccionada" AnchorPane.bottomAnchor="96.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="-3.0">
+							<font>
+								<Font name="Script MT Bold" size="12.0" />
+							</font>
+						</Label>
+						<Button fx:id="toClasificate" layoutX="95.0" layoutY="86.0" mnemonicParsing="false" onAction="#clasificarLetras" text="Clasificar" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="95.0" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="86.0" />
+					</children>
+				</AnchorPane>
+			</center>
+			<bottom>
+				<Pane prefHeight="223.0" prefWidth="301.0" BorderPane.alignment="CENTER">
+					<children>
+						<Label layoutX="30.0" text="Clasificacion:" />
+						<GridPane layoutX="15.0" layoutY="21.0" prefHeight="199.0" prefWidth="370.0">
+							<columnConstraints>
+								<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+								<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+								<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+								<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+								<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+								<ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+							</columnConstraints>
+							<rowConstraints>
+								<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+								<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+								<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+								<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+								<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+							</rowConstraints>
+							<children>
+								<HBox prefHeight="100.0" prefWidth="200.0">
+									<children>
+										<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="A" />
+										<TextField fx:id="a"  styleClass="txt" />
+									</children>
+								</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="B" />
+									<TextField fx:id="b"  styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="C" />
+									<TextField fx:id="c" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="D" />
+									<TextField fx:id="d" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="K" />
+									<TextField fx:id="k" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="2">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="M" />
+									<TextField fx:id="m" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="N" />
+									<TextField fx:id="n" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="O" />
+									<TextField fx:id="o"  styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="P" />
+									<TextField fx:id="p" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="Q" />
+									<TextField fx:id="q" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="1">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="L" />
+									<TextField fx:id="l" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="J" />
+									<TextField fx:id="j" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="3">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="S" />
+									<TextField fx:id="s" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="R" />
+									<TextField fx:id="r" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="Z" />
+									<TextField fx:id="z" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5">
+								<children>
+									<HBox prefHeight="100.0" prefWidth="200.0">
+										<children>
+											<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="F" />
+											<TextField fx:id="f" styleClass="txt" />
+										</children>
+									</HBox>
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="I" />
+									<TextField fx:id="i" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="H" />
+									<TextField fx:id="h" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="G" />
+									<TextField fx:id="g" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="E" />
+									<TextField fx:id="e" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="T" />
+									<TextField fx:id="t" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="3">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="U" />
+									<TextField fx:id="u" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="V" />
+									<TextField fx:id="v" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="3">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="W" />
+									<TextField fx:id="w" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="3">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="X" />
+									<TextField styleClass="txt" fx:id="x" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="4">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="Y" />
+									<TextField fx:id="y" styleClass="txt" />
+								</children>
+							</HBox>
+							<HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+								<children>
+									<Label alignment="CENTER" prefHeight="35.0" prefWidth="28.0" text="Ñ" />
+									<TextField fx:id="ñ" styleClass="txt" />
+								</children>
+							</HBox>
+					</children>
+				</GridPane>
+	</children>
+</Pane>
+</bottom>
+</BorderPane>
+</children>
+</AnchorPane>
